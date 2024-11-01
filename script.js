@@ -88,15 +88,26 @@ async function getTimings() {
     const eishaIqamahElement = document.getElementById('isha-iqamah');
     eishaIqamahElement.innerText = eishaIqamah;
 
-    const islamicDate = todayTimings[13];
-    const islamicDateElement = document.getElementById('islamic-date');
-    islamicDateElement.innerText = islamicDate;
+    
 
     const todayElement = document.getElementById('today');
     todayElement.innerText = DAY + ' ' + getMonthString(month) + ' ' + year;
 
     const dayOfWeekElement = document.getElementById('day-of-week');
     dayOfWeekElement.innerText = getDayOfWeek(THE_DAY);
+
+    const islamicMonthData = rows.find(x => x.includes`islamic_month_current`)
+
+    const islamicMonthDataAsJson = JSON.parse(islamicMonthData)
+
+    const {islamic_month_current, islamic_month_next, islamic_month_transition_day} = islamicMonthDataAsJson
+
+    const islamicDate = parseInt(todayTimings[13]);
+    const islamicDateElement = document.getElementById('islamic-date');
+    const whichIslamicMonth = (DAY >= islamic_month_transition_day) ? islamic_month_next : islamic_month_current;
+    islamicDateElement.innerText = islamicDate + '-' + whichIslamicMonth
+
+    console.log(islamicMonthDataAsJson)
 }
 
 getTimings();
