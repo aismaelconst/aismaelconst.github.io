@@ -1,0 +1,69 @@
+.column-4 {
+    background-color: rgb(140, 105, 16);
+}
+
+.beginning-time {
+    background-color: rgb(116, 116, 228);
+}
+
+.iqamah-time {
+    background-color: darkgreen;
+}
+
+.salat-name {
+    background-color: black;
+}
+
+.sunrise-time {
+    background-color: red;
+}
+
+table {
+    color: white;
+    border-spacing: 0;
+    margin: 0px;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+
+    font-size: 2em;
+}
+
+.bismillah {
+    background-color: darkblue
+}
+
+.jumma-salaat-info {
+    background-color: darkblue;
+}
+
+td {
+    padding: 10px;
+}
+
+.sunrise-time, .beginning-time, .iqamah-time, .jumma-salaat-info, .bismillah {
+    text-align: center;
+}
+
+.jumma-salaat-info-title {
+    font-weight: bold;
+    font-size: 1.5em;
+
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+}
+
+#clock {
+    font-size: 1.5em;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    background-color: darkblue;
+}
+
+#mosque-image, #warning-image {
+    z-index: 1;
+    width: 150px;
+    position: absolute;
+    display: block;
+}

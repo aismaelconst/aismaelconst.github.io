@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prayer Times</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <table>
+        <tr>
+            <td colspan="3" id="clock">Date</td>
+            <td colspan="2" class="column-4"></td>
+        </tr>
+        <tr>
+            <td class="bismillah" colspan="3">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</td>
+            <td class="column-4">
+                <div id="day-of-week"></div>
+                <div id="today"></div>
+            </td>
+        </tr>
+        <tr>
+            <td class="salat-name">Salat</td>
+            <td class="salat-name">Begins</td>
+            <td class="salat-name">Iqamah</td>
+            <td class="column-4"></td>
+        </tr>
+        <tr>
+            <td class="salat-name">Fajr</td>
+            <td id="fajr-begins" class="beginning-time">{fajr-begins}</td>
+            <td id="fajr-iqamah" class="iqamah-time">{fajr-iqamah}</td>
+            <td class="column-4" id="islamic-date">{islamicday-islamicmonth-islamicyear}</td>
+        </tr>
+        <tr>
+            <td class="salat-name">Sunrise</td>
+            <td id="sunrise" colspan="2" class="sunrise-time">{sunrise-time}</td>
+            <td class="column-4">
+                <img src="mosque-logo.png" alt="mosque" id="mosque-image">
+            </td>
+        </tr>
+        <tr>
+            <td class="salat-name">Zohr</td>    
+            <td id="zohr-begins" class="beginning-time">{zohr-begins}</td>
+            <td id="zohr-iqamah" class="iqamah-time">{zohr-iqamah}</td>
+            <td class="column-4">
+                
+            </td>
+        </tr>
+        <tr>
+            <td class="salat-name">Asr</td>
+            <td id="asr-begins" class="beginning-time">{asr-begins}</td>
+            <td id="asr-iqamah" class="iqamah-time">{asr-iqamah}</td>
+            <td class="column-4"></td>
+        </tr>
+        <tr>
+            <td class="salat-name">Maghrib</td>
+            <td id="maghrib-begins" class="beginning-time">{maghrib-begins}</td>
+            <td id="maghrib-iqamah" class="iqamah-time">{maghrib-iqamah}</td>
+            <td class="column-4">
+                <img src="warning.png" alt="warning" id="warning-image">
+            </td>
+        </tr>
+        <tr>
+            <td class="salat-name">Isha</td>
+            <td id="isha-begins" class="beginning-time">{isha-begins}</td>
+            <td id="isha-iqamah" class="iqamah-time">{isha-iqamah}</td>
+            <td class="column-4"></td>
+        </tr>
+        <tr>
+            <td colspan="3" class="jumma-salaat-info">
+                <div class="jumma-salaat-info-title">Jumma Salaat</div>
+                <div id="jumma-salaat-info">{jumma-salaat-info}</div>
+            </td>
+            <td class="column-4"></td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
