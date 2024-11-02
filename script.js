@@ -126,6 +126,10 @@ function updateTime() {
     // Format the string with leading zeroes
     const clockStr = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
 
+    if (clockStr === '00:00:00') {
+        window.location.reload()
+    }
+
     timeElement.innerText = clockStr;
 }
 
