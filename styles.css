@@ -18,6 +18,10 @@
     background-color: red;
 }
 
+body {
+    background-color: darkblue;
+}
+
 table {
     color: white;
     border-spacing: 0;
