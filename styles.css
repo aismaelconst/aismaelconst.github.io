@@ -19,7 +19,10 @@
 }
 
 body {
-    background-color: darkblue;
+    /* background-color: darkblue; */
+    padding: 0px;
+    margin: 0px;
+    background-color: purple;
 }
 
 table {
@@ -63,7 +66,6 @@ td {
     text-align: center;
     color: white;
     font-weight: bold;
-    background-color: darkblue;
 }
 
 #mosque-image, #warning-image {
@@ -71,4 +73,18 @@ td {
     width: 150px;
     position: absolute;
     display: block;
+}
+
+#qard-image, #reminder-image, #classes-image {
+    width: 300px;
+    z-index: 2
+}
+
+.column-5 {
+    background-color: darkblue;
+}
+
+.welcome-banner {
+    background-color: purple;
+    text-align: center;
 }

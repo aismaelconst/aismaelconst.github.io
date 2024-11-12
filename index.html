@@ -10,33 +10,38 @@
     
     <table>
         <tr>
-            <td colspan="3" id="clock">Date</td>
-            <td colspan="2" class="column-4"></td>
-        </tr>
-        <tr>
             <td class="bismillah" colspan="3">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</td>
-            <td class="column-4">
-                <div id="day-of-week"></div>
-                <div id="today"></div>
+            <td colspan="1" id="clock" class="column-4"></td>
+            <td rowspan="2" class="column-5">
+                <img src="classes.png" alt="" id="classes-image">
             </td>
         </tr>
         <tr>
             <td class="salat-name">Salaat</td> 
             <td class="salat-name">Begins</td>
             <td class="salat-name">Iqamah</td>
-            <td class="column-4"></td>
+            <td class="column-4">
+                <div id="day-of-week"></div>
+                <div id="today"></div>
+            </td>
         </tr>
         <tr>
             <td class="salat-name">Fajr</td>
             <td id="fajr-begins" class="beginning-time">{fajr-begins}</td>
             <td id="fajr-iqamah" class="iqamah-time">{fajr-iqamah}</td>
             <td class="column-4" id="islamic-date">{islamicday-islamicmonth-islamicyear}</td>
+            <td class="column-5">
+
+            </td>
         </tr>
         <tr>
             <td class="salat-name">Sunrise</td>
             <td id="sunrise" colspan="2" class="sunrise-time">{sunrise-time}</td>
             <td class="column-4">
                 <img src="mosque-logo.png" alt="mosque" id="mosque-image">
+            </td>
+            <td rowspan="2" class="column-5">
+                <img src="qard.png" alt="" id="qard-image">
             </td>
         </tr>
         <tr>
@@ -52,6 +57,9 @@
             <td id="asr-begins" class="beginning-time">{asr-begins}</td>
             <td id="asr-iqamah" class="iqamah-time">{asr-iqamah}</td>
             <td class="column-4"></td>
+            <td class="column-5">
+
+            </td>
         </tr>
         <tr>
             <td class="salat-name">Maghrib</td>
@@ -59,6 +67,9 @@
             <td id="maghrib-iqamah" class="iqamah-time">{maghrib-iqamah}</td>
             <td class="column-4">
                 <img src="warning.png" alt="warning" id="warning-image">
+            </td>
+            <td rowspan="2" class="column-5">
+                <img src="reminder.png" alt="" id="reminder-image">
             </td>
         </tr>
         <tr>
@@ -73,6 +84,14 @@
                 <div id="jumma-salaat-info">{jumma-salaat-info}</div>
             </td>
             <td class="column-4"></td>
+            <td class="column-5">
+
+            </td>
+        </tr>
+        <tr>
+            <td class="welcome-banner" colspan="5">
+                Welcome to Molesey Islamic Cultural Centre  -  Molesey Masjid
+            </td>
         </tr>
     </table>
     <script src="script.js"></script>
