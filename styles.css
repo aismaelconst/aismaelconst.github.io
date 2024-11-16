@@ -77,10 +77,15 @@ td {
 
 #qard-image, #reminder-image, #classes-image {
     width: 300px;
-    z-index: 2
+    z-index: 2;
 }
 
-.column-5 {
+#zt-image, #wa-image {
+    width: 300px;
+    z-index: 3;
+}
+
+.column-5, .column-6 {
     background-color: darkblue;
 }
 
