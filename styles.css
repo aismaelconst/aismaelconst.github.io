@@ -32,7 +32,7 @@ table {
     font-weight: bold;
     font-family: 'Arial', sans-serif;
 
-    font-size: 1.5em;
+    font-size: 1.75em;
     width: 100%;
 }
 
@@ -45,7 +45,7 @@ table {
 }
 
 td {
-    padding: 10px;
+    padding: 5px;
 }
 
 .sunrise-time, .beginning-time, .iqamah-time, .jumma-salaat-info, .bismillah {
